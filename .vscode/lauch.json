@@ -1,0 +1,21 @@
+{
+    "type": "lldb",
+    "request": "launch",
+    "name": "Debug example 'breakout'",
+    "cargo": {
+        "args": [
+            "build",
+            "--example=breakout",
+            "--package=bevy"
+        ],
+        "filter": {
+            "name": "breakout",
+            "kind": "example"
+        }
+    },
+    "args": [],
+    "cwd": "${bevy_tutorial}",
+    "env": {
+        "CARGO_MANIFEST_DIR": "${bevy_tutorial}"
+    }
+}
